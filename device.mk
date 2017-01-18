@@ -83,6 +83,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init.qcom.power.rc:root/init.qcom.power.rc \
     $(LOCAL_PATH)/configs/init.qcom.usb.rc:root/init.qcom.usb.rc \
     $(LOCAL_PATH)/configs/init.qcom.usb.sh:root/init.qcom.usb.sh \
+    $(LOCAL_PATH)/configs/init.target.rc:root/init.target.rc \
     $(LOCAL_PATH)/configs/ueventd.qcom.rc:root/ueventd.qcom.rc \
     $(LOCAL_PATH)/configs/fstab.qcom:root/fstab.qcom \
     $(LOCAL_PATH)/configs/twrp.fstab:recovery/root/etc/twrp.fstab
@@ -243,8 +244,8 @@ PRODUCT_PACKAGES += \
 #PRODUCT_COPY_FILES += \
 #    $(LOCAL_PATH)/configs/power_profiles.xml:system/etc/power_profiles.xml
 
-PRODUCT_PACKAGES += \
-    Oneplus3Parts
+#PRODUCT_PACKAGES += \
+#    Oneplus3Parts
 
 # bluetooth
 PRODUCT_COPY_FILES += \

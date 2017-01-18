@@ -172,6 +172,9 @@ USE_SENSOR_MULTI_HAL := true
 TARGET_USES_NQ_NFC := true
 BOARD_NFC_CHIPSET := pn548
 
+# RIL
+TARGET_RIL_VARIANT := caf
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
 
@@ -183,18 +186,12 @@ TARGET_CRYPTFS_HW_PATH := $(BOARD_PATH)/cryptfs_hw
 TARGET_INCREASES_COLDBOOT_TIMEOUT := true
 
 # CNE and DPM
-TARGET_LDPRELOAD := libNimsWrap.so
 BOARD_USES_QCNE := true
 
 # selinux
 include device/qcom/sepolicy/sepolicy.mk
-
 BOARD_SEPOLICY_DIRS += $(BOARD_PATH)/sepolicy
-
 BOARD_SECCOMP_POLICY += $(BOARD_PATH)/seccomp
-
-# camera hax
-TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
 # Recovery:Start
 TARGET_RECOVERY_FSTAB := $(BOARD_PATH)/configs/fstab.qcom

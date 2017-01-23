@@ -275,3 +275,7 @@ PRODUCT_BOOT_JARS += telephony-ext
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.msm8996
+
+# APNs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml
